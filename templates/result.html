@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<style>
+ body {
+	width: 100%;
+	height:auto;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-size: 18px;
+	text-align:center;
+	letter-spacing:1.2px;
+    background-color: #A9C3ED;
+ }
+</style>
+
+</head>
+<body>
+
+            {% if  prediction==0 %}
+				<h1>Prediction: <span class='danger'> yes there is a default payment next month .</span></h1>
+			{% elif  prediction==1 %}
+				<h1>Prediction: <span class='safe'>No there is  not a default payment next month.</span></h1>
+			{% endif %}
+</body>
+</html>
